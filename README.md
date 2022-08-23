@@ -8,14 +8,18 @@ Feel free to try smaller towns if it doesn't find the city/town that you want no
 - Tempature  in fahrenheit
 - Wind speed in mph
 - Humidity %
--5 weather fun facts about 
+- 5 weather fun facts about 
+- Suggested Vacation spot
 
 
 I tried but was unable to impliment the time of the sunrise and the sunset of the each city. Also sometime eve when you put in major city you get a very random picture that has nothing to do with the city.
 
 
 video 
-https://youtu.be/0CsPIBeh2CA
+https://youtu.be/1PYDqsu6rvM
 
 blog link
 https://medium.com/@vecter1180/so-you-want-to-be-a-software-engineer-61e9ddbe35eb
+
+
+c60365652dec51df2f047860c419b678

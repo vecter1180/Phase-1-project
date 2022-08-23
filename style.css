@@ -64,11 +64,13 @@ h1.temp {
     color: black;
     font-size: 12px;
     border: none;
+    background-color: darkgrey;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+
     
 }
 
@@ -76,31 +78,42 @@ h1.temp {
 
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: green;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 .dropdown-content a{
     color:black;
-    padding12px 16px;
+    padding:12px 16px;
     text-decoration:none;
     display: block;
     
 }
 /*this is the color for the drop highlight background*/
 .dropdown-content:hover{
-    background-color: rgb(99, 95, 95);
+    background-color: rgb(0, 0, 0);
 }
 
 .dropdown:hover .dropdown-content{
     display: block;
 }
 
-.dropdwon:hover .dropbtn {
-    background-color: #3e8e41;
+
+
+.results {
+    justify-content: center;
 }
-/* This is 
+
+.randomBtn{
+    justify-content: center;
+    display: block;
+}
+
+/*.dropdown:hover .dropbtn {
+    background-color: #0796d8;
+}
+ This is 
 .search {
     position: center;
     margin-left: 600px;

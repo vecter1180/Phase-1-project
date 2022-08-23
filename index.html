@@ -22,12 +22,13 @@
         <div class="description">Cloudy</div>
         <div class="humidity">Humidity: 87%</div>
         <div class="wind">Wind speed: 6 MPH</div>
-        <div class="sunrise">Sunrise:</div>
-        <div class="sunset">Sunset:</div>
+       <!-- <div class="sunrise">Sunrise:</div> unabl to get sunraise and sunset to work--> 
+      <!--  <div class="sunset">Sunset:</div>-->
       </div>
       <div class="dropdown">
-        <button class="dropbtn">Weather Fun Facts</button>
+        <button class="dropbtn" id="dropdrop">Weather Fun Facts</button>
         <div class="dropdown-content">
+          <!-- double check these facts-->
           <div>Hottest City on Earth: Jacobabad</div>
           <div>Coldest City on Earth: Oymyakon</div>
           <div>Windiest City on Earth: Cold Bay</div>
@@ -35,6 +36,19 @@
           <div>Cloudiest City on Earth: Tórshavn, Faroe Islands</div>
         </div>
       </div>
+    </div>
+
+    <div class="card">
+      <h1>Random Vacation button</h1>
+      <div class="startRandom">
+        <button class="randomBtn" onclick="getRandomCity()">30 best vacation spots</button>
+      </div>
+      
+      <div id="resultbox"><h3><em>Results</em><h3></div>
+      
+      </div>
+
+
     </div>
 
     <!--Garbage but DO NOT DELETE
