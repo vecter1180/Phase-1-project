@@ -72,47 +72,17 @@ document.getElementById("dropdrop").addEventListener("mouseout", offmouse);
 
 //randomCity()
 
-let city = [   
-    "Hong Kong",	
-    "Singapore",
-    "Bangkok",
-    "London",
-    "Macau",
-    "Kuala Lumpur",	
-    "Shenzhen",
-    "New York City",
-    "Antalya",
-    "Paris",
-    "Istanbul",
-    "Rome",
-    "Dubai",
-    "Guangzhou",	
-    "Phuket",
-    "Mecca",
-    "Pattaya",
-    "Taipei	",
-    "Prague",
-    "Shanghai",
-    "Las Vegas",	
-    "Miami",
-    "Barcelona",
-    "Moscow",	
-    "Beijing",	
-    "Los Angeles",	
-    "Budapest",
-    "Vienna",	
-    "Amsterdam",	
-    "Sofia"
-];
+
    
 function getRandomCity(list,items =1 ) {
+    console.log(city)
     [...list].sort(() => Math.random() > 0.5 ? 1: -1).slice(0,items)
     
-  }
+}
 
-  document.querySelector(".randomBtn").addEventListener("click", function(){
+document.querySelector(".randomBtn").addEventListener("click", function(){
     console.log("click")
-    getRandomCity();
+    getRandomCity(city);
 
 });
 
