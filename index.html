@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=P, initial-scale=1.0" />
     <title>Phase 1 project</title>
     <script src="./script.js" defer></script>
-    <!-- is this working properly? Yes!-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,17 +17,14 @@
       <div class="weather">
         <h2 class="city">Weather in</h2>
         <h1 class="temp">88° F</h1>
-        <img src="" alt="" class="icon" />
+        <img src="" alt="" class="display-icon" />
         <div class="description">Cloudy</div>
         <div class="humidity">Humidity: 87%</div>
         <div class="wind">Wind speed: 6 MPH</div>
-       <!-- <div class="sunrise">Sunrise:</div> unabl to get sunraise and sunset to work--> 
-      <!--  <div class="sunset">Sunset:</div>-->
       </div>
       <div class="dropdown">
         <button class="dropbtn" id="dropdrop">Weather Fun Facts</button>
         <div class="dropdown-content">
-          <!-- double check these facts-->
           <div>Hottest City on Earth: Jacobabad</div>
           <div>Coldest City on Earth: Oymyakon</div>
           <div>Windiest City on Earth: Cold Bay</div>
@@ -37,54 +33,14 @@
         </div>
       </div>
     </div>
-
     <div class="card">
-      <h1>Random Vacation button</h1>
-      <div class="startRandom">
-        <button class="randomBtn" onclick="getRandomCity()">30 best vacation spots</button>
-      </div>
-      
+      <h1>Random city button</h1>
+        <div class="startRandom">
+          <button class="random-vacation-spot-btn">30 best vacation spots</button>
+        </div>
         <div class ><h3><em>Results</em><h3></div>
-      
+        <div class ="random-vacation-spot"></div>
       </div>
-
-
     </div>
-
-    <!--Garbage but DO NOT DELETE
-
-	<div class="background-image"></div>
-	<div class="toggle">
-		<h3>Make it °C here!</h3>
-		<div class="toggle-switch">
-				<input type="checkbox">
-				<label for="degree change" class="on" >°C</label>
-				<label for="degree change" class="off"></label>
-		</div>
-
-	</div>
-	<div class="card" style="text-align: center">
-		<div class="search">
-			<input type="search" class="searchbox" placeholder="Enter City Here" style="text-align: center;">
-			<button>What's the Weather in...</button>
-		</div>
-	</div>
-	<div class="card" style="text-align: center">
-		<div class="weather-stats">
-			<h1 class="city">Tokyo</h1>
-			<h1><div class="current temp">Current Temp: 83°</div>
-			</h1>
-			<h3>
-				<div class="sky">Sky: Sunny</div>
-				<div class="humidity">Humidity: 54%</div>
-				<div class="wind">Wind speed: 4 mph</div>
-				<div class="sunraise">Sunraise: 5:23am</div>
-				<div class="sunset">Sunset: 8:34pm</div>
-			</h3>
-		</div>
-			
-			
-
-	</div> -->
   </body>
 </html>

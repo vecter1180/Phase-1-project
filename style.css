@@ -1,17 +1,11 @@
 body {
-    
-   
     background-size: cover;
     background-repeat: no-repeat;
     height: max-content;
     width: max-content;
     background: #222;
     background-image: url('https://source.unsplash.com/1600x900/?" + city +');
-
-
 }
-
-
 
 /* weather info can't get it in the center of the page*/
 .card {
@@ -24,8 +18,6 @@ body {
     max-width: 420px;
     margin: 1em;
 }
-
-
 
 .search {
     display: flex;
@@ -42,10 +34,14 @@ body {
     outline: none;
     background:  #7c7c7c2b;
     color:white;
-
 }
 
-input.search-bar {
+.random-vacation-spot-btn,
+.searchbutton {
+    cursor: pointer;
+}
+
+.search-bar {
     border: none;
     outline: none;
     padding: 0.4em;
@@ -60,7 +56,6 @@ h1.temp {
 }
 
 .dropbtn {
-    
     color: black;
     font-size: 12px;
     border: none;
@@ -70,12 +65,9 @@ h1.temp {
 .dropdown {
     position: relative;
     display: inline-block;
-
-    
 }
 
 .dropdown-content{
-
     display: none;
     position: absolute;
     background-color: green;
@@ -88,7 +80,6 @@ h1.temp {
     padding:12px 16px;
     text-decoration:none;
     display: block;
-    
 }
 /*this is the color for the drop highlight background*/
 .dropdown-content:hover{
@@ -98,8 +89,6 @@ h1.temp {
 .dropdown:hover .dropdown-content{
     display: block;
 }
-
-
 
 .resultsBox {
     justify-content: center;

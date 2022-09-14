@@ -1,6 +1,5 @@
  
  //console.log(document.querySelector(".searchbutton"))
-
  let weather = {
     /*make sure you get/give the key to use otherwise this won't work*/ 
     key:"c60365652dec51df2f047860c419b678",
