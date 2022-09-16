@@ -1,5 +1,6 @@
  
  //console.log(document.querySelector(".searchbutton"))
+ console.log("Hello world");
  let weather = {
     /*make sure you get/give the key to use otherwise this won't work*/ 
     key:"c60365652dec51df2f047860c419b678",
@@ -67,6 +68,38 @@ document.getElementById("dropdrop").addEventListener("mouseout", offmouse);
 
 
 
+
+
+const getRandomCity = async (e) => {
+    const res = await fetch("https://countriesnow.space/api/v0.1/countries");
+    const data = await res.json();
+    const randomCountry =
+      data.data[Math.floor(Math.random() * data.data.length)];
+    const randomCity =
+      randomCountry.cities[
+        Math.floor(Math.random() * randomCountry.cities.length)
+      ];
+    const randomVacationSpot = queryDom(".random-vacation-spot");
+    randomVacationSpot.innerText = randomCity;
+  };
+
+  const randomVacationSpotBtn = queryDom(".random-vacation-spot-btn");
+
+  randomVacationSpotBtn.addEventListener("click", (e) => {
+    getRandomCity(e);
+  });
+;
+
+
+
+
+
+
+
+
+
+
+                            
 //document.querySelector(".resultbox").innerText = "You should travel to:" + getRandomCity() ;
 
 //randomCity()
