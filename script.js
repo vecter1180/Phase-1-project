@@ -5,7 +5,6 @@
     /*make sure you get/give the key to use otherwise this won't work*/ 
     key:"c60365652dec51df2f047860c419b678",
     fetchWeather: function (city) {
-        console.log('city = ', city);
         fetch(
            "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + weather.key /* weather.key*/ 
         ) /* learn how to hide an api key in the project*/
@@ -14,14 +13,12 @@
             .then((data) => this.displayWeather(data));
     },
     displayWeather: function(data) {
-        console.log('data = ', data);
         const { name }  = data;
         const { icon, description } = data.weather [0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         const sunrise = new Date(data.sys.sunrise).toLocaleTimeString('en-US');
         const sunset = new Date(data.sys.sunset).toLocaleTimeString('en-US');
-console.log('sunrise = ', sunrise, 'sunset = ', sunset);
         document.querySelector(".city").innerText = "Weather in " + name;
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".description").innerText = description;
