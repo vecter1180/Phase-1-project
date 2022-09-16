@@ -70,18 +70,47 @@ document.getElementById("dropdrop").addEventListener("mouseout", offmouse);
 
 //randomCity()
 
-
-   
-function getRandomCity(list,items =1 ) {
-    console.log(list)
-    list.sort(() => Math.random() > 0.5 ? 1: -1).slice(0,items)
+function getRandomCity() {
+    const cities = [   
+        "Hong Kong",	
+        "Singapore",
+        "Bangkok",
+        "London",
+        "Macau",
+        "Kuala Lumpur",	
+        "Shenzhen",
+        "New York City",
+        "Antalya",
+        "Paris",
+        "Istanbul",
+        "Rome",
+        "Dubai",
+        "Guangzhou",	
+        "Phuket",
+        "Mecca",
+        "Pattaya",
+        "Taipei	",
+        "Prague",
+        "Shanghai",
+        "Las Vegas",	
+        "Miami",
+        "Barcelona",
+        "Moscow",	
+        "Beijing",	
+        "Los Angeles",	
+        "Budapest",
+        "Vienna",	
+        "Amsterdam",	
+        "Sofia"
+    ];
     
+    let randomCity = cities.sort(() => Math.random() > 0.5 ? 1: -1).slice(0,1);
+    weather.fetchWeather(randomCity[0]);
 }
 
 document.querySelector(".randomBtn").addEventListener("click", function(){
     console.log("click")
     getRandomCity();
-
 });
 
 // document.querySelector(".resultbox").innerText = "You should go to:" + getRandomCity();
